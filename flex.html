@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flex</title>
+
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px
+        }
+
+        .box {
+            background-color: burlywood;
+            border-radius: 10px;
+            padding: 30px;
+        }
+
+        @media screen and (max-width: 576px) {
+            .container {
+                display: flex;
+                flex-direction: column-reverse;
+                gap: 20px
+            }
+
+            .box {
+                background-color: rgb(87, 255, 62);
+                border-radius: 10px;
+                padding: 30px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>Flexible Flex</h2>
+    <div class="container">
+        <div class="box">
+            <h3>First Box</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, quam fuga voluptas repellendus ab
+                consectetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corporis eum culpa,
+                possimus eius minus!</p>
+        </div>
+        <div class="box">
+            <h3>Second Box</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, aperiam eveniet ipsa libero sed autem!
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos, laboriosam sint. Quis voluptates
+                quod voluptatum?</p>
+        </div>
+    </div>
+</body>
+
+</html>
